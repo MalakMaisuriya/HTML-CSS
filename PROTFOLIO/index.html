@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Malak Maisuriya - Frontend Developer building responsive websites, landing pages, portfolios, and full-stack-ready UI screens.">
+    <meta name="keywords" content="Malak Maisuriya, Frontend Developer, Web Developer, Portfolio, HTML, CSS, Bootstrap, JavaScript, Full Stack">
+    <meta name="author" content="Malak Maisuriya">
+    <meta property="og:title" content="Malak Maisuriya | Frontend Developer">
+    <meta property="og:description" content="Responsive websites, portfolio pages, landing pages, and full-stack-ready frontend interfaces.">
+    <meta property="og:image" content="./images/pic.jpg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Malak Maisuriya | Frontend Developer">
+    <meta name="twitter:description" content="Clean, responsive and professional websites using HTML, CSS, Bootstrap and JavaScript.">
+    <meta name="twitter:image" content="./images/pic.jpg">
+    <title>Malak Maisuriya | Frontend Developer</title>
+
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive-style.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
+    <header class="site-header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home" aria-label="Malak Maisuriya home">
+                    <img src="./images/logo.png" class="img-fluid" alt="Malak Maisuriya logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav nav-menu">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#certificates">Certificates</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item mt-3 mt-lg-0"><a class="primary-button" href="#contact">Hire Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center min-vh-100 hero-row">
+                    <div class="col-lg-8 text-center text-lg-start">
+                        <span class="eyebrow">Available for freelance projects</span>   
+                        <h1>I'm Malak Maisuriya, <span>Frontend Developer</span> based in India.</h1>
+                        <p class="hero-text">I build clean, responsive and user-friendly websites with frontend polish and full-stack understanding. My focus is simple: professional UI, smooth user experience and practical web solutions.</p>
+                        <div class="hero-actions">
+                            <a class="primary-button" href="#portfolio"><i class="fa-solid fa-folder-open"></i> View Work</a>
+                            <a class="primary-button secondary-button" href="mailto:malakmaisuriya857@gmail.com"><i class="fa-solid fa-envelope"></i> Email Me</a>
+                            <a class="primary-button secondary-button" href="./images/MALAK MAISURIYA (1).pdf" target="_blank" rel="noopener" download><i class="fa-solid fa-download"></i> Download CV</a>
+                        </div>
+                        <div class="hero-socials" aria-label="Professional links">
+                            <a href="https://github.com/MalakMaisuriya" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/malak-maisuriya/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="https://www.instagram.com/malak_maisuriya_/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/918160991260" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        </div>
+                        <div class="hero-mini-stats">
+                            <span><strong>51+</strong> Practice projects</span>
+                            <span><strong>6</strong> Web services</span>
+                            <span><strong>100%</strong> Responsive focus</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-5 mb-4 mb-lg-0">
+                        <div class="profile-card">
+                            <img src="./images/pic.jpg" class="img-fluid profile-photo" alt="Malak Maisuriya photo">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ps-lg-5 text-center text-lg-start">
+                        <span class="subtitle">About Me</span>
+                        <h2>Frontend developer with full-stack learning and a practical design eye.</h2>
+                        <p>I create websites that look professional on every screen and are easy for clients to understand, update and share. I have completed full-stack learning, so I can think beyond UI and build layouts that are ready for real web application flows.</p>
+
+                        <div class="pt-4">
+                            <ul class="nav nav-pills justify-content-center justify-content-lg-between mb-4" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-skill-tab" data-bs-toggle="pill" data-bs-target="#pills-skill" type="button" role="tab" aria-controls="pills-skill" aria-selected="true">Skills</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-work-tab" data-bs-toggle="pill" data-bs-target="#pills-work" type="button" role="tab" aria-controls="pills-work" aria-selected="false">Work</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-tools-tab" data-bs-toggle="pill" data-bs-target="#pills-tools" type="button" role="tab" aria-controls="pills-tools" aria-selected="false">Tools</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-education-tab" data-bs-toggle="pill" data-bs-target="#pills-education" type="button" role="tab" aria-controls="pills-education" aria-selected="false">Education</button>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-skill" role="tabpanel" aria-labelledby="pills-skill-tab" tabindex="0">
+                                    <div class="single-progress">
+                                        <h6>HTML5 & CSS3</h6>
+                                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div><span class="label">92%</span></div>
+                                        <h6>Bootstrap & Responsive Design</h6>
+                                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div><span class="label">88%</span></div>
+                                        <h6>JavaScript</h6>
+                                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div><span class="label">76%</span></div>
+                                        <h6>UI Polish</h6>
+                                        <div class="progress"><div class="progress-bar" role="progressbar" style="width: 84%" aria-valuenow="84" aria-valuemin="0" aria-valuemax="100"></div><span class="label">84%</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-work" role="tabpanel" aria-labelledby="pills-work-tab" tabindex="0">
+                                    <ul class="timeline-list text-start ps-0">
+                                        <li><strong>Portfolio Websites</strong><span>Personal branding pages with sections for skills, services, projects and contact.</span></li>
+                                        <li><strong>Landing Pages</strong><span>Responsive single-page layouts for products, events and small businesses.</span></li>
+                                        <li><strong>Website Redesign</strong><span>Improving old pages with better spacing, typography, structure and mobile behavior.</span></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-tools" role="tabpanel" aria-labelledby="pills-tools-tab" tabindex="0">
+                                    <ul class="timeline-list text-start ps-0">
+                                        <li><strong>Frontend</strong><span>HTML, CSS, Bootstrap, JavaScript, responsive UI</span></li>
+                                        <li><strong>Full-Stack Basics</strong><span>API flow, backend logic, database concepts and deployment awareness</span></li>
+                                        <li><strong>Workflow</strong><span>VS Code, GitHub, browser dev tools, responsive testing</span></li>
+                                    </ul>
+                                </div>
+
+                                <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab" tabindex="0">
+                                    <ul class="timeline-list text-start ps-0">
+                                        <li><strong>Web Development</strong><span>Frontend development practice with real layouts and responsive design.</span></li>
+                                        <li><strong>Full-Stack Development</strong><span>Completed full-stack learning and continuing to improve real project skills.</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-4">
+                        <span class="subtitle">Tech Stack</span>
+                        <h2>Tools I use to build modern websites.</h2>
+                        <p>Simple, reliable frontend technologies for clean layouts, fast loading and responsive user experience.</p>
+                    </div>
+                </div>
+                <div class="skill-grid">
+                    <div class="skill-chip"><i class="fa-brands fa-html5"></i><span>HTML5</span></div>
+                    <div class="skill-chip"><i class="fa-brands fa-css3-alt"></i><span>CSS3</span></div>
+                    <div class="skill-chip"><i class="fa-brands fa-bootstrap"></i><span>Bootstrap 5</span></div>
+                    <div class="skill-chip"><i class="fa-brands fa-js"></i><span>JavaScript</span></div>
+                    <div class="skill-chip"><i class="fa-solid fa-mobile-screen"></i><span>Responsive UI</span></div>
+                    <div class="skill-chip"><i class="fa-brands fa-github"></i><span>GitHub</span></div>
+                    <div class="skill-chip"><i class="fa-solid fa-server"></i><span>Backend Basics</span></div>
+                    <div class="skill-chip"><i class="fa-solid fa-database"></i><span>Database Basics</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-me" class="value-section">
+            <div class="container">
+                <div class="row align-items-center gy-4">
+                    <div class="col-lg-5 text-center text-lg-start">
+                        <span class="subtitle">Why Hire Me</span>
+                        <h2>I build websites that look professional and work smoothly.</h2>
+                        <p>I create clean, responsive and user-friendly websites with attention to design, speed and detail. My goal is to turn your idea into a polished website that feels simple, modern and ready to share.</p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row g-4">
+                            <div class="col-sm-6">
+                                <div class="why-card">
+                                    <i class="fa-solid fa-display"></i>
+                                    <h3>Responsive Design</h3>
+                                    <p>Your website will look clean and balanced on mobile, tablet and desktop screens.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="why-card">
+                                    <i class="fa-solid fa-gauge-high"></i>
+                                    <h3>Fast Performance</h3>
+                                    <p>I keep pages lightweight, organized and smooth for a better visitor experience.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="why-card">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                    <h3>Modern Layout</h3>
+                                    <p>Every section is planned with clear spacing, readable content and a professional look.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="why-card">
+                                    <i class="fa-solid fa-comments"></i>
+                                    <h3>Reliable Support</h3>
+                                    <p>I listen carefully, share clear updates and focus on delivering the right final result.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats-strip">
+                    <div>
+                        <strong>51+</strong>
+                        <span>Practice Projects</span>
+                    </div>
+                    <div>
+                        <strong>6</strong>
+                        <span>Core Services</span>
+                    </div>
+                    <div>
+                        <strong>100%</strong>
+                        <span>Responsive Focus</span>
+                    </div>
+                    <div>
+                        <strong>24h</strong>
+                        <span>Quick Reply Goal</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center mb-4">
+                        <span class="subtitle">What I Do</span>
+                        <h2>Services I Offer</h2>
+                        <p>I help students, creators and businesses launch clean websites that are responsive, readable and ready to share.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body">
+                                <i class="fa-solid fa-laptop-code service-icon"></i>
+                                <h3>Website Development</h3>
+                                <p>Custom websites built with clean HTML, CSS, Bootstrap, JavaScript and full-stack-ready structure.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body">
+                                <i class="fa-solid fa-mobile-screen-button service-icon"></i>
+                                <h3>Responsive Design</h3>
+                                <p>Layouts optimized for mobile, tablet and desktop so your site feels consistent everywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body">
+                                <i class="fa-solid fa-wand-magic-sparkles service-icon"></i>
+                                <h3>UI Improvement</h3>
+                                <p>Polish for spacing, colors, typography, buttons and sections to make pages look professional.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body">
+                                <i class="fa-solid fa-bolt service-icon"></i>
+                                <h3>Landing Pages</h3>
+                                <p>Focused one-page websites for services, products, campaigns and personal promotion.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body">
+                                <i class="fa-solid fa-screwdriver-wrench service-icon"></i>
+                                <h3>Full-Stack Ready UI</h3>
+                                <p>Frontend screens planned for login, dashboard, forms, API data and real application flows.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card service-card h-100">
+                            <div class="card-body">
+                                <i class="fa-solid fa-rocket service-icon"></i>
+                                <h3>Portfolio Setup</h3>
+                                <p>A complete personal portfolio with hero, about, skills, services, work, resume and contact sections.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="process-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5">
+                        <span class="subtitle">Work Process</span>
+                        <h2>How I turn an idea into a polished website.</h2>
+                        <p>A clear workflow keeps the project organized from first discussion to final delivery.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-card">
+                            <span>01</span>
+                            <h3>Discuss</h3>
+                            <p>Understand your goal, content, audience and required sections.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-card">
+                            <span>02</span>
+                            <h3>Design</h3>
+                            <p>Plan layout, colors, typography and responsive structure.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-card">
+                            <span>03</span>
+                            <h3>Build</h3>
+                            <p>Code the website with clean HTML, CSS, Bootstrap and JavaScript.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="process-card">
+                            <span>04</span>
+                            <h3>Polish</h3>
+                            <p>Test mobile views, fix details and prepare the final website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 text-center mb-4">
+                        <span class="subtitle">Selected Work</span>
+                        <h2>Latest Projects</h2>
+                        <p>A small collection of layouts and visual work. More projects can be added as new work is completed.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <button class="project-card" type="button" data-bs-toggle="modal" data-bs-target="#projectOneModal" aria-label="Open Responsive Website Layout details">
+                            <span class="project-image">
+                                <img src="./images/web image page.png" alt="Responsive website layout preview">
+                            </span>
+                            <span class="project-content">
+                                <strong>Responsive Website Layout</strong>
+                                <small>HTML, CSS, Bootstrap</small>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <button class="project-card" type="button" data-bs-toggle="modal" data-bs-target="#projectTwoModal" aria-label="Open Creative Web Design details">
+                            <span class="project-image">
+                                <img src="./images/pr 2.jpeg" alt="Creative web design preview">
+                            </span>
+                            <span class="project-content">
+                                <strong>Creative Web Design</strong>
+                                <small>UI Design, Layout, Visual Polish</small>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <button class="project-card" type="button" data-bs-toggle="modal" data-bs-target="#projectThreeModal" aria-label="Open Portfolio Interface details">
+                            <span class="project-image">
+                                <img src="./images/pr 2.jpeg" alt="Portfolio interface preview">
+                            </span>
+                            <span class="project-content">
+                                <strong>Portfolio Interface</strong>
+                                <small>Portfolio, Branding, Frontend</small>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5">
+                        <span class="subtitle">Client Ready</span>
+                        <h2>What people can expect while working with me.</h2>
+                        <p>These highlights show the kind of experience I aim to give every project.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>Clear layout, good spacing and mobile-friendly sections that make the website feel professional.</p>
+                            <strong>Professional Design</strong>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>Simple communication and practical updates, so the project direction stays easy to understand.</p>
+                            <strong>Easy Communication</strong>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card">
+                            <i class="fa-solid fa-quote-left"></i>
+                            <p>Focused improvements for colors, typography, buttons and responsive behavior before delivery.</p>
+                            <strong>Detail Oriented</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="certificates-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-5">
+                        <span class="subtitle">Learning Proof</span>
+                        <h2>Certificates and learning milestones.</h2>
+                        <p>This section is ready for your course certificates, internship letters, achievements and completion proofs.</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <article class="certificate-card">
+                            <div class="certificate-icon"><i class="fa-solid fa-certificate"></i></div>
+                            <span>Full-Stack Development</span>
+                            <h3>Course Certificate</h3>
+                            <p>Add your full-stack certificate image or PDF here when ready.</p>
+                            <a href="#contact">Update Later</a>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="certificate-card">
+                            <div class="certificate-icon"><i class="fa-solid fa-code-branch"></i></div>
+                            <span>Frontend Practice</span>
+                            <h3>Project Completion</h3>
+                            <p>Add project completion certificates, workshop proof or training records.</p>
+                            <a href="#portfolio">View Work</a>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="certificate-card">
+                            <div class="certificate-icon"><i class="fa-solid fa-award"></i></div>
+                            <span>Achievement</span>
+                            <h3>Recognition</h3>
+                            <p>Add awards, participation certificates or important learning milestones.</p>
+                            <a href="#contact">Update Later</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section">
+            <div class="container">
+                <div class="row align-items-start gy-4">
+                    <div class="col-lg-5 text-center text-lg-start">
+                        <span class="subtitle">FAQ</span>
+                        <h2>Quick answers before starting.</h2>
+                        <p>Here are common things clients usually want to know before giving a website project.</p>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="accordion custom-accordion" id="portfolioFaq">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                                        Can you make a full responsive website?
+                                    </button>
+                                </h3>
+                                <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#portfolioFaq">
+                                    <div class="accordion-body">Yes, I can build responsive static websites for portfolio, business, landing page and personal branding needs.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                                        Which technologies do you use?
+                                    </button>
+                                </h3>
+                                <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#portfolioFaq">
+                                    <div class="accordion-body">I use HTML, CSS, Bootstrap and JavaScript for frontend work, with full-stack learning for backend, database and application flow understanding.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                                        Can you improve my existing website?
+                                    </button>
+                                </h3>
+                                <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#portfolioFaq">
+                                    <div class="accordion-body">Yes, I can improve layout, spacing, colors, mobile responsiveness, broken links and overall presentation.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-panel text-center">
+                    <span class="subtitle">Ready To Start</span>
+                    <h2>Need a portfolio or business website?</h2>
+                    <p>Tell me your idea and I will help you turn it into a clean, responsive website.</p>
+                    <a class="primary-button" href="#contact">Start a Project</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-lg-6 pe-lg-5 text-center text-lg-start">
+                        <span class="subtitle">Contact</span>
+                        <h2>Let's build something professional.</h2>
+                        <p>Have a website idea, portfolio update or landing page requirement? Send a message and I will get back to you.</p>
+
+                        <div class="contact-details">
+                            <a href="tel:+918160991260"><i class="fa-solid fa-phone"></i> +91 81609 91260</a>
+                            <a href="https://wa.me/918160991260" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp Me</a>
+                            <a href="mailto:malakmaisuriya857@gmail.com"><i class="fa-solid fa-envelope"></i> malakmaisuriya857@gmail.com</a>
+                        </div>
+
+                        <form class="contact-form" id="contactForm">
+                            <div class="mb-3">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" autocomplete="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" name="phone" class="form-control" placeholder="Your Phone" autocomplete="tel">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" name="email" class="form-control" placeholder="Your Email" autocomplete="email" required>
+                            </div>
+                            <div class="mb-4">
+                                <textarea name="message" rows="4" class="form-control" placeholder="Write your message" required></textarea>
+                            </div>
+                            <button type="submit" class="primary-button">Submit</button>
+                            <p class="form-status" id="formStatus" aria-live="polite"></p>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 mb-4 mb-lg-0 order-first order-lg-last">
+                        <img class="contact-image" src="./images/Screenshot 2024-10-29 193435.png" alt="Portfolio preview">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade project-dialog" id="projectOneModal" tabindex="-1" aria-labelledby="projectOneTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <span class="subtitle">Featured Project</span>
+                        <h2 class="modal-title" id="projectOneTitle">Responsive Website Layout</h2>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image-scroll">
+                        <img src="./images/web image page.png" alt="Responsive website layout preview">
+                    </div>
+                    <p>A responsive website layout focused on clean structure, strong first impression and smooth viewing across screen sizes.</p>
+                    <div class="modal-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>Responsive Design</span>
+                    </div>
+                    <a class="primary-button" href="https://drive.google.com/file/d/17PkhHL0LIAymXEV32rZ29nieWmlBctH2/view?usp=drive_link" target="_blank" rel="noopener">Open Project</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade project-dialog" id="projectTwoModal" tabindex="-1" aria-labelledby="projectTwoTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <span class="subtitle">Design Study</span>
+                        <h2 class="modal-title" id="projectTwoTitle">Creative Web Design</h2>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image-scroll">
+                        <img src="./images/pr 2.jpeg" alt="Creative web design preview">
+                    </div>
+                    <p>A visual design concept created to practice layout balance, hero presentation, section spacing and brand-friendly colors.</p>
+                    <div class="modal-tags">
+                        <span>UI Design</span>
+                        <span>Layout</span>
+                        <span>Visual Polish</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade project-dialog" id="projectThreeModal" tabindex="-1" aria-labelledby="projectThreeTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div>
+                        <span class="subtitle">Portfolio UI</span>
+                        <h2 class="modal-title" id="projectThreeTitle">Portfolio Interface</h2>
+                    </div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-image-scroll">
+                        <img src="./images/pr 2.jpeg" alt="Portfolio interface preview">
+                    </div>
+                    <p>A personal branding interface with a clear contact path, strong visual preview and reusable portfolio sections.</p>
+                    <div class="modal-tags">
+                        <span>Portfolio</span>
+                        <span>Branding</span>
+                        <span>Frontend</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row align-items-center gy-3">
+                <div class="col-lg-4 col-md-6 text-center text-md-start">
+                    <img src="./images/logo.png" class="footer-logo" alt="Malak Maisuriya logo">
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <ul class="list-unstyled d-flex justify-content-center social-icon mb-0">
+                        <li><a href="https://github.com/MalakMaisuriya" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/malak-maisuriya/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.instagram.com/malak_maisuriya_/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://wa.me/918160991260" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="mailto:malakmaisuriya857@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a href="#home" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <p class="copyright-text mb-0 text-lg-end text-center">Copyright 2026 <a href="#home">Malak Maisuriya</a>. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a class="floating-whatsapp" href="https://wa.me/918160991260" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

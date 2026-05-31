@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malak Maisuriya | Resume</title>
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #e9edf3;
+            color: #17202c;
+            font-family: "Poppins", Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .resume-page {
+            width: min(940px, calc(100% - 32px));
+            margin: 32px auto;
+            padding: 46px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 20px 70px rgba(15, 23, 32, 0.14);
+        }
+
+        .resume-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            border-bottom: 2px solid #edf1f5;
+            padding-bottom: 24px;
+            margin-bottom: 28px;
+        }
+
+        h1,
+        h2,
+        h3,
+        p {
+            margin-top: 0;
+        }
+
+        h1 {
+            font-size: 38px;
+            line-height: 1.1;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #f25f5c;
+            margin: 28px 0 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 17px;
+            margin-bottom: 4px;
+        }
+
+        .role {
+            color: #526173;
+            font-weight: 600;
+        }
+
+        .contact {
+            text-align: right;
+            color: #526173;
+            font-size: 14px;
+        }
+
+        .contact a {
+            color: #17202c;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .links {
+            display: grid;
+            gap: 4px;
+            margin-top: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 34px;
+        }
+
+        .item {
+            padding-bottom: 16px;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #edf1f5;
+        }
+
+        .item:last-child {
+            border-bottom: 0;
+        }
+
+        ul {
+            padding-left: 18px;
+            margin: 8px 0 0;
+        }
+
+        li {
+            margin-bottom: 7px;
+        }
+
+        .chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .chips span {
+            padding: 7px 10px;
+            border-radius: 4px;
+            background: #edf8f7;
+            color: #136d64;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .print-btn {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            border: 0;
+            border-radius: 4px;
+            padding: 12px 18px;
+            background: #f25f5c;
+            color: #ffffff;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        @media (max-width: 720px) {
+            .resume-page {
+                padding: 26px;
+            }
+
+            .resume-header,
+            .grid {
+                grid-template-columns: 1fr;
+                display: grid;
+            }
+
+            .contact {
+                text-align: left;
+            }
+        }
+
+        @media print {
+            body {
+                background: #ffffff;
+            }
+
+            .resume-page {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+
+            .print-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="resume-page">
+        <header class="resume-header">
+            <div>
+                <h1>Malak Maisuriya</h1>
+                <p class="role">Frontend Developer | Full-Stack Learner</p>
+                <p>I build clean, responsive and professional websites using HTML, CSS, Bootstrap and JavaScript, with full-stack understanding for real application flows.</p>
+            </div>
+            <div class="contact">
+                <p><a href="mailto:malakmaisuriya857@gmail.com">malakmaisuriya857@gmail.com</a></p>
+                <p><a href="tel:+918160991260">+91 81609 91260</a></p>
+                <div class="links">
+                    <a href="https://github.com/MalakMaisuriya">github.com/MalakMaisuriya</a>
+                    <a href="https://www.linkedin.com/in/malak-maisuriya/">linkedin.com/in/malak-maisuriya</a>
+                    <a href="https://www.instagram.com/malak_maisuriya_/">instagram.com/malak_maisuriya_</a>
+                </div>
+                <p>India</p>
+            </div>
+        </header>
+
+        <div class="grid">
+            <section>
+                <h2>Profile</h2>
+                <p>Frontend developer focused on creating responsive portfolio sites, landing pages and business websites with clean structure, polished UI and practical user experience. Completed full-stack learning and continuing to build real project skills.</p>
+
+                <h2>Projects</h2>
+                <div class="item">
+                    <h3>Responsive Website Layout</h3>
+                    <p>Built a responsive website layout with structured sections, mobile-friendly design and clean visual hierarchy.</p>
+                </div>
+                <div class="item">
+                    <h3>Creative Web Design</h3>
+                    <p>Designed a modern web page concept focused on spacing, typography, color balance and presentation.</p>
+                </div>
+                <div class="item">
+                    <h3>Portfolio Interface</h3>
+                    <p>Created a personal portfolio interface with hero, about, services, projects, FAQ and contact sections.</p>
+                </div>
+
+                <h2>Services</h2>
+                <ul>
+                    <li>Portfolio website development</li>
+                    <li>Landing page development</li>
+                    <li>Responsive design fixes</li>
+                    <li>UI polish and website improvement</li>
+                </ul>
+            </section>
+
+            <aside>
+                <h2>Skills</h2>
+                <div class="chips">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Bootstrap 5</span>
+                    <span>JavaScript</span>
+                    <span>Responsive Design</span>
+                    <span>UI Design</span>
+                    <span>GitHub</span>
+                    <span>Backend Basics</span>
+                    <span>Database Basics</span>
+                    <span>Clean Code</span>
+                </div>
+
+                <h2>Tools</h2>
+                <ul>
+                    <li>VS Code</li>
+                    <li>GitHub</li>
+                    <li>Browser DevTools</li>
+                    <li>Bootstrap Components</li>
+                    <li>Responsive Testing</li>
+                </ul>
+
+                <h2>Education</h2>
+                <p>Completed full-stack learning with continued practice in frontend, backend flow, database concepts and responsive design.</p>
+
+                <h2>Availability</h2>
+                <p>Available for portfolio websites, landing pages, frontend improvement work and full-stack-ready UI screens.</p>
+            </aside>
+        </div>
+    </main>
+
+    <button class="print-btn" type="button" onclick="window.print()">Print / Save PDF</button>
+</body>
+</html>
