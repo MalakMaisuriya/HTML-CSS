@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Courses - Skill Gro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <section class="header-top" aria-label="Información de contacto">
+        <div class="header-top-container">   
+            <div class="header-top-contact">
+                <div class="header-top-item">
+                    <i class="fa-solid fa-location-dot header-top-icon" aria-hidden="true"></i>
+                    <span class="header-top-text">589 5th Ave, NY 10024, USA</span>
+                </div>
+                <div class="header-top-item">
+                    <i class="fa-regular fa-envelope header-top-icon" aria-hidden="true"></i>
+                    <a href="mailto:info@skillgrodemo.com" class="header-top-link">info@skillgrodemo.com</a>
+                </div>
+            </div>
+
+            <div class="header-top-actions">
+                <div class="header-top-item">
+                    <i class="fa-solid fa-phone header-top-icon" aria-hidden="true"></i>
+                    <span class="header-top-text">Call us: <a href="tel:+1235998989" class="header-top-link">+123 599 8989</a></span>
+                </div>
+                
+                <div class="header-top-socials">
+                    <span class="header-top-label">Follow Us On :</span>
+                    <nav class="header-top-social-links" aria-label="Redes sociales">
+                        <a href="#" class="header-top-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="header-top-social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="header-top-social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="header-top-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="header-top-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <header class="main-nav">
+        <div class="main-nav-container">
+            <div class="main-nav-logo-box">
+                <a href="index.html" class="main-nav-logo">
+                    <div class="main-nav-logo-text">
+                        <img src="assets/image/logo/logo.svg" alt="SkillGro logo">  
+                    </div>
+                </a>
+            </div>
+
+            <nav class="main-nav-links" aria-label="Navegación principal">
+                <ul class="main-nav-menu">
+                    <li class="main-nav-item">
+                        <a href="index.html" class="main-nav-link">Home <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="all-course.html" class="main-nav-link main-nav-link-active">Courses <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="#" class="main-nav-link">Pages <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="#" class="main-nav-link">Shop <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                    <li class="main-nav-item">
+                        <a href="#" class="main-nav-link">Blog <i class="fa-solid fa-chevron-down"></i></a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="main-nav-search-wrapper">
+                <div class="main-nav-categories">
+                    <i class="fa-solid fa-grid-2x2 main-nav-categories-icon"></i>
+                    <span>Categories</span>
+                    <i class="fa-solid fa-chevron-down main-nav-categories-arrow"></i>
+                </div>
+                <div class="main-nav-search-divider"></div>
+                <form class="main-nav-search-form" action="#">
+                    <input type="text" class="main-nav-search-input" placeholder="Search For Course ...">
+                    <button type="submit" class="main-nav-search-btn" aria-label="Buscar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+
+            <div class="main-nav-actions">
+                <a href="#" class="main-nav-action-icon" aria-label="Favoritos">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="main-nav-badge">0</span>
+                </a>
+                <a href="#" class="main-nav-action-icon" aria-label="Carrito de compras">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                    <span class="main-nav-badge">0</span>
+                </a>
+                <a href="#" class="main-nav-btn-login">Login</a>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="all-courses-hero" aria-label="All courses hero">
+        <div class="container">
+            <div class="page-hero-inner">
+                <div class="page-hero-content">
+                    <h1 class="page-title">All Courses</h1>
+                    <nav class="breadcrumb" aria-label="Breadcrumb">
+                        <a href="index.html">Home</a>
+                        <span>Courses</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="all-courses-section" aria-label="All courses listing">
+        <div class="container">
+            <div class="courses-layout">
+                <aside class="course-sidebar">
+                    <div class="filter-card">
+                        <h3>Categories</h3>
+                        <label><input type="checkbox"> Art & Design <span>(8)</span></label>
+                        <label><input type="checkbox"> Business <span>(12)</span></label>
+                        <label><input type="checkbox"> Data Science <span>(7)</span></label>
+                        <label><input type="checkbox"> Development <span>(10)</span></label>
+                        <label><input type="checkbox"> Finance <span>(8)</span></label>
+                        <label><input type="checkbox"> Health & Fitness <span>(8)</span></label>
+                        <label><input type="checkbox"> Lifestyle <span>(9)</span></label>
+                        <button type="button" class="filter-more">Show More +</button>
+                    </div>
+
+                    <div class="filter-card">
+                        <h3>Language</h3>
+                        <label><input type="checkbox"> All Language <span>(150)</span></label>
+                        <label><input type="checkbox"> Arabic <span>(11)</span></label>
+                        <label><input type="checkbox"> English <span>(53)</span></label>
+                        <label><input type="checkbox"> Spanish <span>(22)</span></label>
+                        <button type="button" class="filter-more">Show More +</button>
+                    </div>
+
+                    <div class="filter-card">
+                        <h3>Price</h3>
+                        <label><input type="checkbox"> All Price</label>
+                        <label><input type="checkbox"> Free</label>
+                        <label><input type="checkbox"> Paid</label>
+                    </div>
+
+                    <div class="filter-card">
+                        <h3>Skill level</h3>
+                        <label><input type="checkbox"> All Skills</label>
+                        <label><input type="checkbox"> Beginner <span>(55)</span></label>
+                        <label><input type="checkbox"> Intermediate <span>(22)</span></label>
+                        <label><input type="checkbox"> High <span>(42)</span></label>
+                    </div>
+
+                    <div class="filter-card">
+                        <h3>Instructors</h3>
+                        <label><input type="checkbox"> David Millar <span>(10)</span></label>
+                        <label><input type="checkbox"> Wade Warren <span>(13)</span></label>
+                        <label><input type="checkbox"> Jenny Wilson <span>(22)</span></label>
+                        <label><input type="checkbox"> Jacob Jones <span>(42)</span></label>
+                        <button type="button" class="filter-more">Show More +</button>
+                    </div>
+
+                    <div class="filter-card">
+                        <h3>Ratings</h3>
+                        <label><input type="checkbox"> <span class="rating-stars">★★★★★</span> <span>(42)</span></label>
+                        <label><input type="checkbox"> <span class="rating-stars">★★★★☆</span> <span>(23)</span></label>
+                        <label><input type="checkbox"> <span class="rating-stars">★★★☆☆</span> <span>(11)</span></label>
+                        <label><input type="checkbox"> <span class="rating-stars">★★☆☆☆</span> <span>(7)</span></label>
+                    </div>
+                </aside>
+
+                <main class="course-main">
+                    <div class="course-topbar">
+                        <div class="results-summary">Showing <strong>250</strong> Total Results</div>
+                        <div class="course-top-actions">
+                            <div class="sort-controls">
+                                <label>
+                                    Sort By:
+                                    <select>
+                                        <option>Most Popular</option>
+                                        <option>Newest</option>
+                                        <option>Price: Low to High</option>
+                                        <option>Price: High to Low</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="view-mode" aria-label="Change view">
+                                <button type="button" class="view-btn active" aria-label="Grid view">
+                                    <i class="fa-solid fa-grip"></i>
+                                </button>
+                                <button type="button" class="view-btn" aria-label="List view">
+                                    <i class="fa-solid fa-list"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-grid">
+                        <article class="course-card">
+                            <div class="course-card-image">
+                                <img src="assets/image/class1.jpg" alt="Learning JavaScript With Imagination">
+                            </div>
+                            <div class="course-card-body">
+                                <span class="course-category">Development</span>
+                                <h3>Learning JavaScript With Imagination</h3>
+                                <p class="course-instructor">By David Millar</p>
+                                <div class="course-meta-row">
+                                    <span><i class="fa-solid fa-star"></i> 4.8 Reviews</span>
+                                    <span>45 lessons</span>
+                                </div>
+                                <div class="course-card-footer">
+                                    <a href="#" class="btn btn-primary btn-small">Enroll Now</a>
+                                    <span class="course-price">$15.00</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-image">
+                                <img src="assets/image/class2.jpg" alt="The Complete Graphic Design for Beginners">
+                            </div>
+                            <div class="course-card-body">
+                                <span class="course-category">Design</span>
+                                <h3>The Complete Graphic Design for Beginners</h3>
+                                <p class="course-instructor">By Jenny Wilson</p>
+                                <div class="course-meta-row">
+                                    <span><i class="fa-solid fa-star"></i> 4.5 Reviews</span>
+                                    <span>50 lessons</span>
+                                </div>
+                                <div class="course-card-footer">
+                                    <a href="#" class="btn btn-primary btn-small">Enroll Now</a>
+                                    <span class="course-price">$19.00</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-image">
+                                <img src="assets/image/class3.jpg" alt="Learning Digital Marketing on Facebook">
+                            </div>
+                            <div class="course-card-body">
+                                <span class="course-category">Marketing</span>
+                                <h3>Learning Digital Marketing on Facebook</h3>
+                                <p class="course-instructor">By Wade Warren</p>
+                                <div class="course-meta-row">
+                                    <span><i class="fa-solid fa-star"></i> 4.3 Reviews</span>
+                                    <span>38 lessons</span>
+                                </div>
+                                <div class="course-card-footer">
+                                    <a href="#" class="btn btn-primary btn-small">Enroll Now</a>
+                                    <span class="course-price">$24.00</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-image">
+                                <img src="assets/image/class4.jpg" alt="Financial Analyst Training & Investing Course">
+                            </div>
+                            <div class="course-card-body">
+                                <span class="course-category">Business</span>
+                                <h3>Financial Analyst Training & Investing Course</h3>
+                                <p class="course-instructor">By Robert Fox</p>
+                                <div class="course-meta-row">
+                                    <span><i class="fa-solid fa-star"></i> 4.8 Reviews</span>
+                                    <span>32 lessons</span>
+                                </div>
+                                <div class="course-card-footer">
+                                    <a href="#" class="btn btn-primary btn-small">Enroll Now</a>
+                                    <span class="course-price">$12.00</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-image">
+                                <img src="assets/image/all-course/David Millar.jpg" alt="Data Analysis & Visualization Masterclass">
+                            </div>
+                            <div class="course-card-body">
+                                <span class="course-category">Data Science</span>
+                                <h3>Data Analysis & Visualization Masterclass</h3>
+                                <p class="course-instructor">By Guy Hawkins</p>
+                                <div class="course-meta-row">
+                                    <span><i class="fa-solid fa-star"></i> 4.5 Reviews</span>
+                                    <span>47 lessons</span>
+                                </div>
+                                <div class="course-card-footer">
+                                    <a href="#" class="btn btn-primary btn-small">Enroll Now</a>
+                                    <span class="course-price">$27.00</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-image">
+                                <img src="assets/image/all-course/Guy Hawkins.jpg" alt="Master the Fundamentals of Math">
+                            </div>
+                            <div class="course-card-body">
+                                <span class="course-category">Mathematic</span>
+                                <h3>Master the Fundamentals of Math</h3>
+                                <p class="course-instructor">By Swaypowlo Mark</p>
+                                <div class="course-meta-row">
+                                    <span><i class="fa-solid fa-star"></i> 4.7 Reviews</span>
+                                    <span>40 lessons</span>
+                                </div>
+                                <div class="course-card-footer">
+                                    <a href="#" class="btn btn-primary btn-small">Enroll Now</a>
+                                    <span class="course-price">$10.00</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-image">
+                                <img src="assets/image/all-course/Wade Warren.jpg" alt="How To Build A Localized Website With Hugo And Strapi">
+                            </div>
+                            <div class="course-card-body">
+                                <span class="course-category">Business</span>
+                                <h3>How To Build A Localized Website With Hugo And Strapi</h3>
+                                <p class="course-instructor">By David Millar</p>
+                                <div class="course-meta-row">
+                                    <span><i class="fa-solid fa-star"></i> 4.8 Reviews</span>
+                                    <span>42 lessons</span>
+                                </div>
+                                <div class="course-card-footer">
+                                    <a href="#" class="btn btn-primary btn-small">Enroll Now</a>
+                                    <span class="course-price">$11.00</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-image">
+                                <img src="assets/image/all-course/Sawpawlo Mark.jpg" alt="Designing Effective Pricing Plans UX">
+                            </div>
+                            <div class="course-card-body">
+                                <span class="course-category">Design</span>
+                                <h3>Designing Effective Pricing Plans UX</h3>
+                                <p class="course-instructor">By Swaypowlo Mark</p>
+                                <div class="course-meta-row">
+                                    <span><i class="fa-solid fa-star"></i> 4.5 Reviews</span>
+                                    <span>36 lessons</span>
+                                </div>
+                                <div class="course-card-footer">
+                                    <a href="#" class="btn btn-primary btn-small">Enroll Now</a>
+                                    <span class="course-price">$17.00</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-image">
+                                <img src="assets/image/all-course/David Millar.jpg" alt="Accelerating UX Maturity With A Breakthrough Project">
+                            </div>
+                            <div class="course-card-body">
+                                <span class="course-category">Language</span>
+                                <h3>Accelerating UX Maturity With A Breakthrough Project</h3>
+                                <p class="course-instructor">By David Millar</p>
+                                <div class="course-meta-row">
+                                    <span><i class="fa-solid fa-star"></i> 4.6 Reviews</span>
+                                    <span>39 lessons</span>
+                                </div>
+                                <div class="course-card-footer">
+                                    <a href="#" class="btn btn-primary btn-small">Enroll Now</a>
+                                    <span class="course-price">$22.00</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-image">
+                                <img src="assets/image/all-course/Jenny Wilson.jpg" alt="Demystifying The New Gatsby Framework">
+                            </div>
+                            <div class="course-card-body">
+                                <span class="course-category">Creative</span>
+                                <h3>Demystifying The New Gatsby Framework</h3>
+                                <p class="course-instructor">By Jack & Jon</p>
+                                <div class="course-meta-row">
+                                    <span><i class="fa-solid fa-star"></i> 4.7 Reviews</span>
+                                    <span>33 lessons</span>
+                                </div>
+                                <div class="course-card-footer">
+                                    <a href="#" class="btn btn-primary btn-small">Enroll Now</a>
+                                    <span class="course-price">$29.00</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-image">
+                                <img src="assets/image/all-course/Guy Hawkins.jpg" alt="Voice Control Usability Considerations For Partially">
+                            </div>
+                            <div class="course-card-body">
+                                <span class="course-category">Data</span>
+                                <h3>Voice Control Usability Considerations For Partially</h3>
+                                <p class="course-instructor">By Lily Rebeca</p>
+                                <div class="course-meta-row">
+                                    <span><i class="fa-solid fa-star"></i> 4.8 Reviews</span>
+                                    <span>32 lessons</span>
+                                </div>
+                                <div class="course-card-footer">
+                                    <a href="#" class="btn btn-primary btn-small">Enroll Now</a>
+                                    <span class="course-price">$12.00</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="course-card">
+                            <div class="course-card-image">
+                                <img src="assets/image/all-course/Wade Warren.jpg" alt="Things I Wish I'd Known Earlier In My Career">
+                            </div>
+                            <div class="course-card-body">
+                                <span class="course-category">Finance</span>
+                                <h3>Things I Wish I'd Known Earlier In My Career</h3>
+                                <p class="course-instructor">By Swaypowlo Mark</p>
+                                <div class="course-meta-row">
+                                    <span><i class="fa-solid fa-star"></i> 4.5 Reviews</span>
+                                    <span>29 lessons</span>
+                                </div>
+                                <div class="course-card-footer">
+                                    <a href="#" class="btn btn-primary btn-small">Enroll Now</a>
+                                    <span class="course-price">$9.00</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="pagination">
+                        <a href="#" class="pagination-link active">1</a>
+                        <a href="#" class="pagination-link">2</a>
+                        <a href="#" class="pagination-link">3</a>
+                        <a href="#" class="pagination-link">4</a>
+                        <a href="#" class="pagination-link">Next <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer" aria-label="Footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">
+                    <img src="assets/image/logo/footer logo.png" alt="SkillGro logo" width="1000px">
+                </a>
+                <p>when an unknown printer took galley of type and scrambled it to make specimen book has.</p>
+                <address class="footer-address">463 7th Ave, NY 10018, USA<br>+123 88 9900 456</address>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="#">Our values</a></li>
+                        <li><a href="#">Our advisory board</a></li>
+                        <li><a href="#">Our partners</a></li>
+                        <li><a href="#">Become a partner</a></li>
+                        <li><a href="#">Work at Future Learn</a></li>
+                        <li><a href="#">Quizlet Plus</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Our Company</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Become Teacher</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Instructor</a></li>
+                        <li><a href="#">Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Get In Touch</h3>
+                    <p class="footer-text">when an unknown printer took galley type and scrambled</p>
+                    <div class="footer-socials" aria-label="Social media links">
+                        <a href="#" class="footer-social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-social-link" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="footer-apps">
+                        <a href="#" class="btn-app"><i class="fa-brands fa-google-play"></i>Get It On Google Play</a>
+                        <a href="#" class="btn-app btn-app-alt"><i class="fa-brands fa-apple"></i>Download On The Apple Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2010-2024 skillgro.com. All rights reserved.</p>
+            <nav class="footer-bottom-nav" aria-label="Legal links">
+                <a href="#">Privacy Policy</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
