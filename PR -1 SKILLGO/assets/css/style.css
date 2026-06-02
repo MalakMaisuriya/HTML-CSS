@@ -836,6 +836,19 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+    position: relative;
+}
+
+.course-card-link {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+}
+
+.course-card-image,
+.course-card-body {
+    position: relative;
+    z-index: 2;
 }
 
 .course-card-image {
