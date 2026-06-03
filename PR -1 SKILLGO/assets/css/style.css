@@ -197,9 +197,7 @@ body {
     z-index: 10;
 }
 
-.main-nav-item:hover .sub-menu {
-    display: block;
-}
+/* Hover intentionally removed: submenu opens via click (JS toggles .open) */
 
 /* Make submenu visible when parent has .open (toggled by JS) or when focused for keyboard users */
 .main-nav-item.open .sub-menu,
