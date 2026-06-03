@@ -190,7 +190,7 @@ body {
     background-color: #ffffff;
     border: 1px solid rgba(16, 25, 40, 0.08);
     border-radius: 18px;
-    padding: 10px 0;
+    padding: 6px 6px;
     box-shadow: 0 20px 40px rgba(29, 50, 109, 0.08);
     min-width: 200px;
     display: none;
@@ -205,6 +205,43 @@ body {
 .main-nav-item.open .sub-menu,
 .main-nav-item:focus-within .sub-menu {
     display: block;
+}
+
+/* Remove default list markers and normalize spacing */
+.sub-menu, .sub-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sub-menu li {
+    list-style: none;
+}
+
+.sub-menu-link {
+    display: block;
+    padding: 12px 18px;
+    color: var(--color-text-dark);
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 12px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.sub-menu-link:hover {
+    background-color: #f5f7ff;
+    color: var(--color-primary);
+}
+
+/* Rotate caret when open */
+.main-nav-link[aria-expanded="true"] i,
+.main-nav-item.open > .main-nav-link i {
+    transform: rotate(180deg);
+}
+
+/* Slightly larger minimum width for readability */
+.sub-menu {
+    min-width: 220px;
 }
 
 .sub-menu-link {
