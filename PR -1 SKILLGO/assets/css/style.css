@@ -1143,6 +1143,139 @@ body {
     font-size: 0.95rem;
 }
 
+.instructors-page-hero {
+    position: relative;
+    overflow: hidden;
+    padding: 72px 0 74px;
+    background:
+        radial-gradient(circle at 16% 26%, rgba(77, 74, 232, 0.10) 0 2px, transparent 3px),
+        radial-gradient(circle at 76% 24%, rgba(77, 74, 232, 0.12) 0 2px, transparent 3px),
+        linear-gradient(100deg, #f7f8ff 0%, #ffffff 52%, #fff2fb 100%);
+}
+
+.instructors-page-hero::before,
+.instructors-page-hero::after {
+    content: "";
+    position: absolute;
+    pointer-events: none;
+}
+
+.instructors-page-hero::before {
+    width: 210px;
+    height: 120px;
+    right: 58px;
+    top: 22px;
+    border-top: 2px solid rgba(77, 74, 232, 0.22);
+    border-radius: 50%;
+    transform: rotate(25deg);
+}
+
+.instructors-page-hero::after {
+    width: 64px;
+    height: 64px;
+    right: 250px;
+    bottom: 28px;
+    border: 2px dashed rgba(77, 74, 232, 0.16);
+    border-radius: 18px;
+    transform: rotate(-22deg);
+}
+
+.instructors-page-hero-inner {
+    position: relative;
+    z-index: 1;
+}
+
+.instructors-page-hero h1 {
+    color: var(--text-navy);
+    font-size: clamp(2rem, 3vw, 2.8rem);
+    line-height: 1.1;
+    margin-bottom: 14px;
+}
+
+.instructors-list-section {
+    background: #ffffff;
+    padding: 74px 0 88px;
+}
+
+.instructors-list-section .instructors-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 56px;
+    row-gap: 38px;
+}
+
+.instructors-list-section .instructor-card {
+    display: grid;
+    grid-template-columns: 122px minmax(0, 1fr);
+    gap: 18px;
+    align-items: center;
+    padding: 0;
+    text-align: left;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+}
+
+.instructors-list-section .instructor-card:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.instructors-list-section .instructor-avatar {
+    width: 122px;
+    height: 122px;
+    margin: 0;
+    border-radius: 50%;
+    background: #f3f5fb;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.instructors-list-section .instructor-card h3 {
+    font-size: 0.98rem;
+    margin-bottom: 5px;
+}
+
+.instructors-list-section .instructor-card p {
+    color: var(--color-primary);
+    font-size: 0.78rem;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.instructors-list-section .instructor-rating {
+    justify-content: flex-start;
+    gap: 4px;
+    font-size: 0.74rem;
+    color: #7b8499;
+    font-weight: 500;
+    margin-bottom: 9px;
+}
+
+.instructors-list-section .instructor-rating i {
+    font-size: 0.68rem;
+}
+
+.instructors-list-section .instructor-socials {
+    justify-content: flex-start;
+    gap: 7px;
+}
+
+.instructors-list-section .instructor-socials a {
+    width: 24px;
+    height: 24px;
+    border: 1px solid #cfd5e5;
+    background: #ffffff;
+    color: #778096;
+    font-size: 0.68rem;
+}
+
+.instructors-list-section .instructor-socials a:hover {
+    border-color: var(--color-primary);
+    background: var(--color-primary);
+    color: #ffffff;
+}
+
 .event-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -1246,6 +1379,10 @@ body {
     .instructors-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    .instructors-list-section .instructors-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 32px;
+    }
     .resologin-wrapper {
         flex-direction: column;
         align-items: flex-start;
@@ -1255,6 +1392,24 @@ body {
 @media (max-width: 640px) {
     .instructors-grid {
         grid-template-columns: 1fr;
+    }
+    .instructors-page-hero {
+        padding: 56px 0;
+    }
+    .instructors-list-section {
+        padding: 56px 0 70px;
+    }
+    .instructors-list-section .instructors-grid {
+        grid-template-columns: 1fr;
+        row-gap: 28px;
+    }
+    .instructors-list-section .instructor-card {
+        grid-template-columns: 92px minmax(0, 1fr);
+        gap: 14px;
+    }
+    .instructors-list-section .instructor-avatar {
+        width: 92px;
+        height: 92px;
     }
     .about-image img {
         min-height: 280px;
