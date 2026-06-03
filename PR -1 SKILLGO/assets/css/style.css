@@ -201,6 +201,12 @@ body {
     display: block;
 }
 
+/* Make submenu visible when parent has .open (toggled by JS) or when focused for keyboard users */
+.main-nav-item.open .sub-menu,
+.main-nav-item:focus-within .sub-menu {
+    display: block;
+}
+
 .sub-menu-link {
     display: block;
     padding: 10px 18px;
