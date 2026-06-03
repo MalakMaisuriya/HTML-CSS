@@ -1011,14 +1011,10 @@ body {
 }
 
 .about-grid,
+.instructors-grid,
 .event-grid {
     display: grid;
     gap: 30px;
-}
-.instructors-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
 }
 
 .about-grid {
@@ -1075,88 +1071,31 @@ body {
 .instructor-card {
     background-color: #ffffff;
     border: 1px solid rgba(15, 23, 42, 0.06);
-    border-radius: 12px;
-    padding: 18px 20px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    text-align: left;
-    box-shadow: 0 14px 30px rgba(29, 50, 109, 0.04);
+    border-radius: 28px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(29, 50, 109, 0.06);
 }
 
 .instructor-avatar {
-    width: 160px;
-    height: 160px;
-    min-width: 160px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 100%;
+    height: 280px;
+    border-radius: 24px;
+    object-fit: contain;
     object-position: center;
     background-color: #f7f8fa;
+    margin-bottom: 18px;
 }
 
-.instructor-content h3 {
-    font-size: 1.25rem;
-    margin: 0 0 6px 0;
+.instructor-card h3 {
+    font-size: 1.15rem;
+    margin-bottom: 8px;
     color: var(--text-navy);
 }
 
-.instructor-content p {
-    color: #6b5dd3;
-    margin: 0 0 8px 0;
-    font-weight: 600;
-}
-
-.instructor-meta {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 6px;
-}
-
-.instructor-rating {
-    display: flex;
-    align-items: center;
-    gap: 6px;
+.instructor-card p {
     color: #64748b;
-}
-
-.instructor-socials {
-    display: flex;
-    gap: 10px;
-    margin-left: auto;
-}
-
-.instructor-socials a {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
-    background: #fff;
-    border: 1px solid rgba(99, 102, 241, 0.12);
-    color: #6b5dd3;
-}
-
-@media (max-width: 900px) {
-    .instructor-card {
-        flex-direction: row;
-        gap: 16px;
-    }
-    .instructor-avatar {
-        width: 120px;
-        height: 120px;
-        min-width: 120px;
-    }
-}
-
-@media (max-width: 600px) {
-    .instructor-card {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-    .instructor-socials { margin-left: 0; }
+    margin-bottom: 16px;
 }
 
 .instructor-meta {
@@ -1261,97 +1200,24 @@ body {
 
 @media (max-width: 992px) {
     .about-grid,
-    .instructors-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 2.5rem 2.5rem;
-        align-items: start;
+    .instructors-grid,
+    .event-grid {
+        grid-template-columns: 1fr;
     }
+    .resologin-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
 
-    .instructor-card {
-        background: transparent;
-        border: none;
-        padding: 0;
+@media (max-width: 640px) {
+    .about-image img {
+        min-height: 280px;
     }
-
-    .instructor-row {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
+    .resologin-copy h2 {
+        font-size: 2rem;
     }
-
-    .avatar-wrap {
-        flex: 0 0 140px;
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
-        overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: radial-gradient(circle at 30% 30%, rgba(0,0,0,0.03), transparent 40%);
-    }
-
-    .instructor-avatar {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-    }
-
-    .instructor-info h3 {
-        font-size: 1.05rem;
-        margin: 0 0 6px 0;
-        color: var(--text-navy);
-    }
-
-    .instructor-info p {
-        margin: 0 0 8px 0;
-        color: #6b6fb3;
-        font-weight: 600;
-    }
-
-    .instructor-meta {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .instructor-rating {
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-        color: #374151;
-    }
-
-    .instructor-rating span {
-        color: #6b7280;
-        font-size: 0.95rem;
-    }
-
-    .instructor-socials a {
-        display: inline-flex;
-        width: 36px;
-        height: 36px;
-        border-radius: 50%;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid rgba(99, 102, 241, 0.18);
-        color: #6b7280;
-        background: #fff;
-        text-decoration: none;
-        box-shadow: 0 4px 8px rgba(15,23,42,0.03);
-    }
-
-    @media (max-width: 900px) {
-        .instructors-grid { grid-template-columns: repeat(2, 1fr); }
-    }
-
-    @media (max-width: 600px) {
-        .instructors-grid { grid-template-columns: 1fr; }
-        .instructor-row { gap: 0.75rem; }
-        .avatar-wrap { flex: 0 0 110px; width:110px; height:110px; }
-    }
+}
 
 .btn-small {
     display: inline-flex;
