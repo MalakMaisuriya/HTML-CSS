@@ -1065,25 +1065,31 @@ body {
 }
 
 .instructors-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .instructor-card {
     background-color: #ffffff;
     border: 1px solid rgba(15, 23, 42, 0.06);
-    border-radius: 28px;
+    border-radius: 24px;
     padding: 24px;
     text-align: center;
     box-shadow: 0 20px 40px rgba(29, 50, 109, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.instructor-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 28px 58px rgba(29, 50, 109, 0.1);
 }
 
 .instructor-avatar {
     width: 100%;
-    height: 280px;
-    border-radius: 24px;
+    height: 300px;
+    border-radius: 20px;
     object-fit: contain;
-    object-position: center;
-    background-color: #f7f8fa;
+    object-position: bottom center;
+    background: linear-gradient(180deg, #f8f9ff 0%, #eef2ff 100%);
     margin-bottom: 18px;
 }
 
@@ -1095,7 +1101,41 @@ body {
 
 .instructor-card p {
     color: #64748b;
+    margin-bottom: 14px;
+}
+
+.instructor-rating {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    color: var(--text-navy);
+    font-weight: 700;
     margin-bottom: 16px;
+}
+
+.instructor-socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.instructor-socials a {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    background-color: rgba(77, 74, 232, 0.08);
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.instructor-socials a:hover {
+    background-color: var(--color-primary);
+    color: #ffffff;
 }
 
 .instructor-meta {
@@ -1200,9 +1240,11 @@ body {
 
 @media (max-width: 992px) {
     .about-grid,
-    .instructors-grid,
     .event-grid {
         grid-template-columns: 1fr;
+    }
+    .instructors-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
     .resologin-wrapper {
         flex-direction: column;
@@ -1211,6 +1253,9 @@ body {
 }
 
 @media (max-width: 640px) {
+    .instructors-grid {
+        grid-template-columns: 1fr;
+    }
     .about-image img {
         min-height: 280px;
     }
