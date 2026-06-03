@@ -1408,6 +1408,149 @@ body {
     border-color: rgba(255, 255, 255, 0.65);
 }
 
+.student-login-section {
+    background-color: #ffffff;
+    padding: 92px 24px 104px;
+}
+
+.student-login-card {
+    width: min(100%, 540px);
+    margin: 0 auto;
+    padding: 32px 40px 34px;
+    background: #f7f8fc;
+    border: 1px solid #e1e5ef;
+    border-radius: 8px;
+}
+
+.student-login-card h2 {
+    color: var(--text-navy);
+    font-size: 2rem;
+    line-height: 1.15;
+    margin-bottom: 12px;
+}
+
+.student-login-intro {
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.google-login-btn {
+    width: 100%;
+    min-height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    color: var(--text-navy);
+    background-color: #ffffff;
+    border: 1px solid #dfe3ec;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.google-login-btn span {
+    color: #4285f4;
+    font-weight: 800;
+}
+
+.login-divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #4b5563;
+    font-size: 0.86rem;
+    margin: 22px 0;
+}
+
+.login-divider::before,
+.login-divider::after {
+    content: "";
+    height: 1px;
+    flex: 1;
+    background-color: #dfe3ec;
+}
+
+.student-login-form {
+    display: grid;
+    gap: 12px;
+}
+
+.student-login-form label {
+    color: var(--text-navy);
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.student-login-form input[type="email"],
+.student-login-form input[type="password"] {
+    width: 100%;
+    min-height: 44px;
+    border: 1px solid #dfe3ec;
+    border-radius: 4px;
+    background-color: #ffffff;
+    padding: 0 14px;
+    color: var(--text-navy);
+    outline: none;
+}
+
+.student-login-form input:focus {
+    border-color: var(--color-primary);
+}
+
+.student-login-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    margin: 2px 0 12px;
+    font-size: 0.82rem;
+}
+
+.remember-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #4b5563;
+    font-weight: 500;
+}
+
+.remember-label input {
+    accent-color: var(--color-primary);
+}
+
+.student-login-options a,
+.student-signup-text a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.student-login-submit {
+    width: 100%;
+    min-height: 50px;
+    border: 2px solid #101928;
+    border-radius: 999px;
+    background-color: var(--color-secondary);
+    color: #101928;
+    font-weight: 800;
+    cursor: pointer;
+    box-shadow: 0 5px 0 #101928;
+}
+
+.student-login-submit i {
+    margin-left: 8px;
+}
+
+.student-signup-text {
+    text-align: center;
+    color: #6b7280;
+    font-size: 0.84rem;
+    margin-top: 28px;
+}
+
 @media (max-width: 992px) {
     .about-grid,
     .event-grid {
@@ -1423,6 +1566,9 @@ body {
     .resologin-wrapper {
         flex-direction: column;
         align-items: flex-start;
+    }
+    .student-login-section {
+        padding: 70px 20px 82px;
     }
 }
 
@@ -1452,6 +1598,17 @@ body {
     }
     .resologin-copy h2 {
         font-size: 2rem;
+    }
+    .student-login-card {
+        padding: 26px 20px 28px;
+    }
+    .student-login-card h2 {
+        font-size: 1.65rem;
+    }
+    .student-login-options {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
     }
 }
 
